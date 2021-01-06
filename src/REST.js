@@ -15,4 +15,4 @@ export default getRate = async () => {
 };
 const films = getRate()
 console.log('films', films);
-// getRate().then(res => console.log(res););
+getRate().then(res => console.log(res););

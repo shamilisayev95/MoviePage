@@ -5,7 +5,7 @@ function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer >
-      <p className='AuthorAndDate'>BY SHAMIL {year}</p>
+      <p className='Author__and__Date'>BY SHAMIL {year}</p>
     </footer>
   );
 }

@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-size: 25px;
+  text-align: center;
+  margin: 20px;
+}
+
+.notes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card__image {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border: 2px solid black;
+  margin-left: 420px;
+}
+
+.card__city {
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+}
+
+.card__countries {
+  font-size: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.card__about {
+  font-size: 15px;
+  margin: 30px;
+}
+
+.remove__btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-left: 780px;
+  z-index: 1;
+  background-color: rgb(221, 91, 31);
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,54 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rootcontainer__auth {
+  height: 350px;
+  width: 300px;
+  box-shadow: 2px 5px 10px deepskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://i.redd.it/qwd83nc4xxf41.jpg");
+}
+
+.auth-container__auth-form {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.auth-form__form-name {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.auth-form__login-input {
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px rgb(233, 2, 2) solid;
+  outline: none;
+  text-align: center;
+}
+
+.auth-form__submit-button {
+  font-size: 20px;
+}
