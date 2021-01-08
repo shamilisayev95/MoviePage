@@ -1,8 +1,8 @@
-import React, {Suspense} from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './modules/home/Home';
 import About from './modules/about/About';
-import FilmRaiting from './modules/filmRaiting/FilmRaiting';
+import FilmRaiting from './modules/filmRaiting/FilmRaiting.jsx';
 import Footer from './components/Footer';
 import './App.css'; 
 

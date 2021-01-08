@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react';
+import React, { useMemo } from 'react';
 import Cards from './Cards';
 import notes from '../../notes';
 import * as api from '../../REST';
@@ -23,8 +23,8 @@ function createCards(cards) {
   )
 }
 
-function FilmRaiting() {
-  const movies = useMemo(() => api.getRate(), [])
+const FilmRaiting = () => {
+  const movies = useMemo(() => api.getRate().then(films => films), [])
   console.log(movies);
     return (
         <div>
@@ -36,4 +36,4 @@ function FilmRaiting() {
     );
   }
 
-export default FilmRaiting; 
+export default FilmRaiting;
