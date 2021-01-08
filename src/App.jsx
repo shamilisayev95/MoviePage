@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './modules/home/Home';
 import About from './modules/about/About';
-import FilmRaiting from './modules/filmRaiting/FilmRaiting.jsx';
+import FilmRating from './modules/filmRating/FilmRating.jsx'
 import Footer from './components/Footer';
 import './App.css'; 
 
@@ -17,14 +17,14 @@ function App() {
                 <ul className="nav-menu">
                   <li><Link to={'/'} className="nav-links">Home</Link></li>
                   <li><Link to={'/about'} className="nav-links">About</Link></li>
-                  <li><Link to={'/filmRaiting'} className="nav-links">FilmRaiting</Link></li>
+                  <li><Link to={'/filmRating'} className="nav-links">FilmRating</Link></li>
                </ul>
               </nav>
             </div>
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route path='/about' component={About} />
-                <Route path='/filmRaiting' component={FilmRaiting} />
+                <Route path='/filmRating' component={FilmRating} />
             </Switch>
             <Footer />
           </div>
