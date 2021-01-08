@@ -1,1 +1,0 @@
-export const getCurrentStatus = state => state.login.isLoged;

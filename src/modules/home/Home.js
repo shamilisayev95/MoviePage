@@ -1,6 +1,5 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import '../../components/carousel.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
 
@@ -14,7 +13,7 @@ function Home() {
             <div>
             <Carousel>
                 <div>
-                    <img src="https://i.pinimg.com/originals/37/9a/dc/379adcd9baafc7c425c123200efdf4a1.jpg" />
+                    <img src="" />
                     <p className="legend">Movie 1</p>
                 </div>
                 <div>

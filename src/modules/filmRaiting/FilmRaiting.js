@@ -1,37 +1,39 @@
-import React from 'react';
+import React, {useMemo} from 'react';
+import Cards from './Cards';
 import notes from '../../notes';
+import * as api from '../../REST';
 import './FilmRaiting.css'; 
 
-const FilmRaiting = () => {
-  const [list, setList] = React.useState(notes);
- 
-  function handleRemove(id) {
-    const newList = list.filter((item) => item.id !== id);
- 
-    setList(newList);
+// api.getRate().then(response => getInfo(response.films))
+
+
+// function getInfo(item) {
+//   const movies = item 
+// }
+
+function createCards(cards) {
+  return (
+    <Cards
+    key={cards.id}
+    images={cards.imgUrl}
+    citys={cards.city}
+    countries={cards.country}
+    about={cards.description}
+  />
+  )
+}
+
+function FilmRaiting() {
+  const movies = useMemo(() => api.getRate(), [])
+  console.log(movies);
+    return (
+        <div>
+          <h1 className='header'>
+            COUNTRY and CITY
+          </h1>
+          <div className="dictionary">{notes.map(createCards)}</div>
+        </div>
+    );
   }
- 
-  return <List list={list} onRemove={handleRemove} />;
-};
- 
-const List = ({ list, onRemove }) => (
-  <ul className='notes'>
-    {list.map((item) => (
-      <Item key={item.id} item={item} onRemove={onRemove} />
-    ))}
-  </ul>
-);
- 
-const Item = ({ item, onRemove }) => (
-  <li className='notes__cards'>
-    <p className='card__city'>{item.city}</p>
-    <p className='card__countries'>{item.country}</p>
-    <button className='remove__btn' type="button" onClick={() => onRemove(item.id)}>X</button>
-    <img src={item.imgUrl} className='card__image' />
-    <p className='card__about'>{item.description}</p>
-  </li>
-);
 
-  export default FilmRaiting;
-
-  
+export default FilmRaiting; 
