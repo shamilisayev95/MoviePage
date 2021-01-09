@@ -3,17 +3,21 @@
   margin: 30px;
 }
 header {
-  font-size: 30px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  font-family: "East Sea Dokdo", cursive;
   text-align: center;
+  color: aliceblue;
 }
 h2 {
   margin: 10px;
+  color: aliceblue;
 }
 
 article {
   margin: 10px;
+  font-size: 17px;
+  font-family: "East Sea Dokdo", cursive;
+  color: aliceblue;
 }
 
 .trailer__container {

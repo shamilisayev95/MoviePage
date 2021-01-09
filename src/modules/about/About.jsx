@@ -7,7 +7,7 @@ function About() {
         <div>
           <header>
             WELCOME TO About Page
-            <br/>No one reads About watch a Trailer
+            <br/>Better Watch a Trailer
           </header>
           <main className='main__container'>
               <h2>

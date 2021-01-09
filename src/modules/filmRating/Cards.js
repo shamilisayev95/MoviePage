@@ -2,15 +2,15 @@ import React from "react";
 import './FilmRaiting.css';
 
 
-function Cards(props) {
+const Cards = (props) => {
   return (
     <div className="notes">
       <div className='notes__cards'>
-        <p className="card__city">{props.citys}</p>
-        <p className="card__countries">{props.countries}</p>
-        <button className='remove__btn'>X</button>
+        <p className="film__name">{props.names}</p>
+        <p className="film__rating">{props.ratings}</p>
+        <button className='remove__btn' onClick={props.filmId}>X</button>
         <img className="card__image" src={props.images}/>
-        <p className="card__about">{props.about}</p>
+        <p className="film__year">{props.years}</p>
       </div>
     </div>
   );

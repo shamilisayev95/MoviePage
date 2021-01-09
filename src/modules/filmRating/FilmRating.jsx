@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Cards from './Cards';
-import notes from '../../notes';
 import * as api from '../../REST';
 import './FilmRaiting.css';
 
-const FilmRating = () => {
+const FilmRating = (props) => {
+
+    // const {
+    //     saveCardsData,
+    //     saveCard,
+    // } = props;
+
     const [movies, setMovies] = useState([]);
 
     useEffect(async () => { //
@@ -16,23 +21,24 @@ const FilmRating = () => {
         };
     }, []);
 
+    console.log(movies);
+
     return (
         <div data-at={'wrapper'}>
-            <div>
               <h1 className='header'>
-                COUNTRY and CITY
+                TOP MOVIES
               </h1>
-            </div>
-            <div className="dictionary">
+            <div className="cards__container">
                 {
                     movies.length ?
                         movies.map((move, index) =>
                             <Cards
                                 key={index}
-                                citys={move.nameEn}
-                                about={move.year}
+                                names={move.nameEn}
+                                years={move.year}
                                 images={move.posterUrl}
-                                countries={move.rating}
+                                ratings={move.rating}
+                                removeBtn={move.filmId}
                             />
                         )
                     : null
