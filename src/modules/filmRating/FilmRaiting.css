@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.main-container {
+  background-image: url("https://wallpaperaccess.com/full/1288076.jpg");
+}
+.notes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 60px;
+  text-align: center;
+  margin: 20px;
+  color: aliceblue;
+  font-family: "East Sea Dokdo", cursive;
+}
+
+.notes {
+  width: 100%;
+  height: 100%;
+}
+
+.card__image {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border: 2px solid black;
+  margin-left: 420px;
+}
+
+.film__name {
+  font-size: 40px;
+  text-align: center;
+  margin: 5px;
+  color: aliceblue;
+
+  font-family: "East Sea Dokdo", cursive;
+}
+
+.film__rating {
+  font-size: 40px;
+  margin-bottom: 5px;
+  display: flex;
+  color: aliceblue;
+  justify-content: center;
+  font-family: "East Sea Dokdo", cursive;
+}
+
+.film__year {
+  font-size: 40px;
+  margin: 30px;
+  display: flex;
+  color: aliceblue;
+  justify-content: center;
+  font-family: "East Sea Dokdo", cursive;
+}
+
+.remove__btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-left: 780px;
+  z-index: 1;
+  background-color: rgb(221, 91, 31);
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
