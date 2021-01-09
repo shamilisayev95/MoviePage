@@ -1,1 +1,0 @@
-export const getSaveCard = state => state.saveCard.saveCardData;
