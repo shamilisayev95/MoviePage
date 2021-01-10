@@ -11,7 +11,12 @@ export const reducer = (state, action) => {
         ...state,
         loading: false,
         movies: action.payload
-      };
+      }
+    case constants.REMOVE_CARD:
+      return {
+        ...state,
+        movies: state.movies.filter((movies) => movies.filmId !== action.payload)
+      }
     default:
       return state;
   }
