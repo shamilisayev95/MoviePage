@@ -71,4 +71,10 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  outline: none;
+}
+
+..carousel .slider-wrapper {
+  width: 300px;
+  height: 300px;
 }
